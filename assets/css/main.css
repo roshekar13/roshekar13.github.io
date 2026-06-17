@@ -1689,14 +1689,86 @@ input, select, textarea {
 		display: none;
 	}
 
+	#header > * {
+		margin-top: 2.5rem;
+	}
+
+	#header > *:before {
+		top: calc(-2.5rem - 1px);
+		height: calc(2.5rem + 1px);
+	}
+
+	#header .content {
+		max-width: 30rem;
+		width: 100%;
+	}
+
+	#header .content .inner {
+		padding: 2rem 1.5rem;
+	}
+
+	#header .content .inner h1 {
+		font-size: 1.85rem;
+		letter-spacing: 0.4rem;
+		margin-bottom: 0.75rem;
+	}
+
 	#header .content .inner .tagline {
-		max-width: 28rem;
+		max-width: 24rem;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 0.95rem;
+		font-size: 0.8rem;
 		font-weight: 600;
-		line-height: 1.75;
-		letter-spacing: 0.1rem;
+		line-height: 1.65;
+		letter-spacing: 0.08rem;
+	}
+
+	#header nav ul li a {
+		min-width: 6.25rem;
+		height: 2.35rem;
+		line-height: 2.35rem;
+		padding: 0 1rem 0 1.15rem;
+		font-size: 0.72rem;
+	}
+
+	.about-gallery {
+		margin-top: 1.75rem;
+	}
+
+	.about-gallery-row {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		gap: 0.75rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.about-gallery-row:last-child {
+		margin-bottom: 0;
+	}
+
+	.about-gallery-item {
+		flex: 1;
+		margin: 0;
+		min-width: 0;
+	}
+
+	.about-gallery-item img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 4px;
+		object-fit: cover;
+	}
+
+	.about-gallery-item figcaption {
+		font-size: 0.65rem;
+		text-align: center;
+		margin-top: 0.45rem;
+		letter-spacing: 0.04rem;
+		line-height: 1.4;
+		text-transform: none;
 	}
 
 	.contact-list {
@@ -1715,15 +1787,48 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
+		#header > * {
+			margin-top: 2rem;
+		}
+
+		#header > *:before {
+			top: calc(-2rem - 1px);
+			height: calc(2rem + 1px);
+		}
+
 		#header .logo {
 			width: 7rem;
 			height: 7rem;
 			line-height: 7rem;
 		}
 
+		#header .content .inner {
+			padding: 1.75rem 1rem;
+		}
+
+		#header .content .inner h1 {
+			font-size: 1.5rem;
+			letter-spacing: 0.35rem;
+		}
+
 		#header .content .inner .tagline {
-			max-width: 22rem;
-			font-size: 0.9rem;
+			max-width: 20rem;
+			font-size: 0.75rem;
+		}
+
+		#header nav ul li a {
+			min-width: 5.5rem;
+			height: 2.15rem;
+			line-height: 2.15rem;
+			font-size: 0.68rem;
+		}
+
+		.about-gallery-row {
+			gap: 0.5rem;
+		}
+
+		.about-gallery-item figcaption {
+			font-size: 0.6rem;
 		}
 
 	}
