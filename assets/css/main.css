@@ -1732,9 +1732,9 @@ input, select, textarea {
 	}
 
 	.about-gallery {
-		margin-top: 1.75rem;
+		margin-top: 2.5rem;
 		width: 100%;
-		max-width: 34rem;
+		max-width: 29rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1769,7 +1769,7 @@ input, select, textarea {
 		object-position: center;
 	}
 
-	.about-gallery-row:last-child .about-gallery-item img {
+	.about-gallery-item--top img {
 		object-position: top center;
 	}
 
@@ -1835,7 +1835,8 @@ input, select, textarea {
 		}
 
 		.about-gallery {
-			max-width: 100%;
+			max-width: 26rem;
+			margin-top: 2.25rem;
 		}
 
 		.about-gallery-row {
